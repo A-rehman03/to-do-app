@@ -1,0 +1,141 @@
+.task-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .task-item p {
+    margin: 5px 0;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .task-item.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  .task-item.completed h3,
+  .task-item.completed p {
+    text-decoration: line-through;
+    color: #155724;
+  }
+  
+  .task-item button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .task-item button.edit {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .task-item button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .task-item button.complete {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .task-item button.edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .task-item button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  .task-item button.complete:hover {
+    background-color: #218838;
+  }
+  
+  .task-item button.save {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .task-item button.cancel {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .task-item button.save:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-item button.cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  .task-item input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Animation for Task Insertion */
+  .task-item.insert-animation {
+    animation: slide-in 0.5s ease forwards;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation for Task Deletion */
+  .task-item.delete-animation {
+    animation: fade-out 0.5s ease forwards;
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  

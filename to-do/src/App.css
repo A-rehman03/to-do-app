@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Task List Container */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Task Item Styles */
+.task-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.task-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Task Form Styles */
+.task-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-form input[type="text"],
+.task-form input[type="checkbox"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task-form label {
+  display: flex;
+  align-items: center;
+}
+
+.task-form label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.task-form button:hover {
+  background-color: #218838;
+}
+
+/* Button Styles */
+.task-item button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-item button.edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.task-item button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-item button.edit:hover {
+  background-color: #e0a800;
+}
+
+.task-item button.delete:hover {
+  background-color: #c82333;
+}
